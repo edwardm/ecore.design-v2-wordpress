@@ -1,7 +1,7 @@
 # ecore.design-v2-wordpress
  The www.ECORE.design, Version 2.0-2020 version, Wordpress child theme custom built riding on top of the Hello Elementor Theme (Parent Theme).
 
-# Prerequisites
+## Prerequisites
 - Wordpress
 - Elementor Plug-in
 	- https://wordpress.org/plugins/elementor/
@@ -10,7 +10,11 @@
 - Elementor – Header, Footer & Blocks Template
 	- https://wordpress.org/plugins/header-footer-elementor/
 
-# View Demo
+## View Demo
 View it at https://www.ecore.design/
 
 <img src="https://www.ecore.design/wp-content/uploads//2020/05/ecore-design-logo.svg" style="width: 100px;" width="100">
+
+## Upcoming
+- Break apart CSS into separate file categories
+- Apply SASS
