@@ -1,0 +1,778 @@
+/*
+	ECORE Design V2
+*/
+
+/* main css */
+
+/* body {
+	margin: 0;
+	padding: 0;
+	font-family: "Barlow", Arial !important;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	color: #ccc;
+	background: rgb(43, 56, 143);
+	background: linear-gradient(90deg, rgba(43, 56, 143, 1) 50%, rgba(63, 80, 159, 1) 100%);
+} */
+
+::-moz-selection {
+	color: #fff;
+	background: #999;
+}
+
+::selection {
+	color: #fff;
+	background: #999;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+}
+
+:-ms-input-placeholder {
+	color: #999;
+}
+
+::placeholder {
+	color: #999;
+}
+
+/* typography ********************************/
+
+body.home h1 a {
+	color: #143980;
+	font-size: 1.2vw;
+	letter-spacing: 0.1;
+	font-weight: 600;
+}
+
+body.home h1 a:hover {
+	color: #666;
+}
+
+.line-height-normal {
+	line-height: normal !important;
+}
+
+.hfe-menu-item.elementor-button {
+	margin-left: 1.5rem;
+}
+
+.elementor-button,
+.wpforms-submit {
+	position: relative;
+	font-family: "Exo 2", Arial !important;
+	font-size: 1em !important;
+	font-weight: 600 !important;
+	/* letter-spacing: 1.5px; */
+	text-transform: uppercase;
+	/* add a margin right to offset 
+	the after content below*/
+	margin-right: 25px;
+	color: #fff !important;
+	border-radius: 0 !important;
+	padding-right: 0 !important;
+	border: none;
+	line-height: normal !important;
+	background: transparent top left no-repeat url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 600.27233 35.25'%3E%3Cdefs%3E%3ClinearGradient id='linear-gradient' x1='0.125' y1='17.625' x2='600.14733' y2='17.625' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233d5ba9'/%3E%3Cstop offset='0.15' stop-color='%23143980'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cpath d='M587.93045.125H12.34188a5,5,0,0,0-4.33013,2.5L.79487,15.125a5,5,0,0,0,0,5l7.21688,12.5a5,5,0,0,0,4.33013,2.5H587.93045a5,5,0,0,0,4.33013-2.5l7.21688-12.5a5,5,0,0,0,0-5l-7.21688-12.5A5,5,0,0,0,587.93045.125Z' style='stroke:%23143980;stroke-miterlimit:10;stroke-width:0.25px;fill:url(%23linear-gradient)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+	background-size: cover !important;
+}
+
+.wpforms-submit {
+	min-width: 120px;
+	padding-left: 1.5em !important;
+}
+
+main .elementor-button,
+footer .elementor-button {
+	font-size: 0.8em !important;
+	letter-spacing: 0.1em;
+}
+
+.elementor-button::after,
+.wpforms-submit::after {
+	transition: none !important;
+	transition-timing-function: none !important;
+	opacity: 1 !important;
+	content: " ";
+	width: 25px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	bottom: 0;
+	/* background-color: red !important; */
+	background: transparent top right no-repeat url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600.02233 35'%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cpath d='M587.80545,0H12.21688A5,5,0,0,0,7.88675,2.5L.66987,15a5,5,0,0,0,0,5L7.88675,32.5A5,5,0,0,0,12.21688,35H587.80545a5,5,0,0,0,4.33013-2.5L599.35246,20a5,5,0,0,0,0-5L592.13558,2.5A5,5,0,0,0,587.80545,0Z' style='fill:%23143980'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+	background-size: cover !important;
+}
+
+.elementor-button:hover,
+.wpforms-submit:hover {
+	opacity: 0.8 !important;
+	line-height: normal !important;
+	-webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.elementor-button::after:hover,
+.wpforms-submit::after:hover {
+	opacity: 0.8 !important;
+}
+
+.elementor-button:hover {
+	color: #ccc;
+}
+
+.scrolled-logo-link {
+	display: none;
+	visibility: hidden;
+}
+
+.site-branding img {
+	width: 300px;
+}
+
+/* header ********************************/
+
+header .current-menu-item a {
+	position: relative;
+	/* border-bottom: 1px solid #14399F; */
+}
+
+header .current-menu-item:not(.elementor-button-wrapper) a::after {
+	opacity: 0.5 !important;
+	content: " ";
+	display: block;
+	position: absolute;
+	right: 25%;
+	bottom: 0;
+	left: 25%;
+	height: 1px;
+	background: #ffffff;
+	background: -moz-linear-gradient(left, #ffffff 0%, #143980 51%, #ffffff 100%);
+	background: -webkit-linear-gradient(left, #ffffff 0%, #143980 51%, #ffffff 100%);
+	background: linear-gradient(to right, #ffffff 0%, #143980 51%, #ffffff 100%);
+
+	/* border-bottom: 1px solid #14399F; */
+}
+
+header .current-menu-item.elementor-button-wrapper a {
+	border-bottom: none;
+}
+
+.hfe-menu-item.elementor-button {
+	color: #fff !important;
+}
+
+/* body content styling */
+
+.laptop-carousel,
+.laptop-carousel .elementor-widget-container,
+.laptop-carousel .swiper-container,
+.laptop-carousel .swiper-slide,
+.laptop-carousel .swiper-wrapper,
+.laptop-carousel .swiper-slide-inner {
+	width: 25vw !important;
+}
+
+.laptop-carousel img {
+	width: 25vw;
+	height: 45vh;
+}
+
+main {
+	min-height: 50vh;
+}
+
+main ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 2em;
+}
+
+main ul li::before:not(.elementor-icon-list-items) {
+	content: "\f0da";
+	font-family: "Font Awesome 5 Free";
+	margin-right: 5px;
+}
+
+.div-style-1 {
+	border-radius: 10px;
+	padding: 2rem 2rem;
+	background: #fff;
+	-webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.elementor-tab-title.elementor-tab-desktop-title.elementor-active {
+	border-radius: 10px 0 0 10px;
+	border-left: 2px solid #14399F !important;
+	background: #eeeeee;
+	background: -moz-linear-gradient(left, #f5f5f5 0%, #ffffff 10%);
+	background: -webkit-linear-gradient(left, #f5f5f5 0%, #ffffff 10%);
+	background: linear-gradient(to right, #f5f5f5 0%, #ffffff 10%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ffffff', GradientType=1);
+}
+
+.elementor-tabs-content-wrapper {
+	border-radius: 0 10px 10px 0;
+}
+
+.elementor-tab-content {
+	padding: 5% !important;
+}
+
+/* forms ********************************/
+
+.wpforms-field-container>div {
+	margin-bottom: 15px !important;
+}
+
+label {
+	display: block;
+	font-family: "Exo 2", Arial;
+	font-size: 0.9rem !important;
+	font-weight: 500 !important;
+	color: #666;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	padding-bottom: 5px;
+}
+
+select {
+	border: 1px solid #ccc !important;
+}
+
+.wpforms-container select,
+.wpforms-container option {
+	font-family: "Exo 2", Arial;
+	color: #666;
+	font-size: 14px !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+.wpforms-container ul {
+	padding: 0;
+	margin-top: 10px !important;
+}
+
+.wpforms-container ul li {
+	margin-bottom: 10px !important;
+}
+
+.wpforms-container ul li label {
+	cursor: pointer !important;
+}
+
+.wpforms-container ul li.wpforms-selected label {
+	color: #14399F;
+	font-weight: 600 !important;
+}
+
+.wpforms-container ul li input[type="checkbox"] {
+	cursor: pointer !important;
+}
+
+.wpforms-submit-container {
+	text-align: center;
+	padding-top: 20px !important;
+}
+
+/* form return message */
+.wpforms-confirmation-container,
+.elementor-widget-text-editor {
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* buttons ********************************/
+
+.wpforms-form input[type="text"],
+.wpforms-form input[type="email"],
+.wpforms-form textarea {
+	font-family: "Barlow", Arial !important;
+	font-weight: 400;
+	font-size: 15px !important;
+	letter-spacing: 0.5px;
+	color: #333;
+	padding: 5px 0 !important;
+	border: none !important;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc !important;
+}
+
+.wpforms-container label.wpforms-error {
+	/*color: #fff !important;
+	background: darkred;
+	padding: 1px 5px;*/
+	padding-top: 5px;
+	font-weight: 600 !important;
+	font-size: 12px !important;
+}
+
+
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field input.user-invalid,
+div.wpforms-container-full .wpforms-form .wpforms-field textarea.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field textarea.user-invalid,
+div.wpforms-container-full .wpforms-form .wpforms-field select.wpforms-error,
+div.wpforms-container-full .wpforms-form .wpforms-field select.user-invalid {
+	border: none;
+	border-bottom: 1px solid darkred;
+}
+
+.wpforms-error-container {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* graphic / illustrations ********************************/
+
+
+
+/* footer ********************************/
+
+/* elementor, for some reason, adds this 
+causing the footer to not show at times */
+
+footer .elementor-invisible {
+	visibility: visible !important;
+}
+
+footer a {
+	color: #fff !important;
+}
+
+footer ul {
+	list-style: none !important;
+	padding: 0 !important;
+	margin-left: 0 !important;
+}
+
+footer ul li a {
+	display: block;
+	font-family: "Exo 2", Arial;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	border-top: 1px dotted #999;
+	line-height: 35px;
+}
+
+footer ul li:last-child a {
+	border-bottom: 1px dotted #999;
+}
+
+footer a:hover {
+	opacity: 0.75;
+}
+
+.footer-container {
+	margin-top: -30px;
+}
+
+.grecaptcha-badge {
+	opacity: 0;
+}
+
+/* Dev Tools Browser preset HiDPI */
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+	body:not(.rtl) .elementor-2 .elementor-element.elementor-element-6880b33 {
+		left: 22vw;
+	}
+
+	.elementor-2 .elementor-element.elementor-element-6880b33 {
+		top: 18vh;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+
+	/* header {
+		padding: 25px 0;
+	} */
+
+	header .logo {
+		z-index: 9999;
+	}
+
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 50px;
+		right: 6%;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 80px;
+	}
+
+	.elementor-2 .elementor-element.elementor-element-4df49043 {
+		padding-top: 0 !important;
+	}
+
+	/*.logo-hero {
+	max-width: 300px;
+}*/
+
+	body.home h1 {
+		font-size: 2.5vw;
+	}
+
+	body.home h1 a {
+		font-size: 2vw;
+	}
+}
+
+/* Dev Tools Browser preset MDPI */
+
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+	body:not(.rtl) .elementor-2 .elementor-element.elementor-element-6880b33 {
+		left: 20vw;
+	}
+
+	.elementor-2 .elementor-element.elementor-element-6880b33 {
+		top: 12vh;
+	}
+}
+
+/* ipad pro */
+
+@media screen and (max-width: 1366px) and (height: 1024px) {
+	/* .hero-iso-list {
+		top: 15vh !important;
+	} */
+
+	/* here iso list */
+	body:not(.rtl) .elementor-2 .elementor-element.elementor-element-6880b33 {
+		left: 22vw;
+	}
+
+	/* here iso list */
+	.elementor-2 .elementor-element.elementor-element-6880b33 {
+		top: 6vh;
+	}
+
+	/* hero input form */
+	body:not(.rtl) .elementor-2 .elementor-element.elementor-element-b2a7841 {
+		left: 70vw;
+	}
+
+	/* hero input form */
+	.elementor-2 .elementor-element.elementor-element-b2a7841 {
+		top: -16vh;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+	header nav {
+		margin-top: 80px;
+	}
+
+	header nav a {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header nav {
+		-webkit-box-shadow: 0 10px 20px 0 #999;
+		box-shadow: 0 10px 20px 0 #999;
+	}
+
+	header .current-menu-item:not(.elementor-button-wrapper) a::after {
+		display: none;
+	}
+
+	header .current-menu-item a::before {
+		opacity: 1 !important;
+		display: block;
+		content: "\f0da";
+		font-family: "Font Awesome 5 Free";
+		position: absolute;
+		top: 26px;
+		left: 0;
+		color: #14399F;
+		/* background: red; */
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/*.animated { all: unset; }*/
+
+	input,
+	textarea,
+	select {
+		/*font-family: "Roboto", Arial;*/
+		font-size: 18px !important;
+	}
+
+	input:focus,
+	select:focus,
+	textarea:focus {
+		outline: none;
+		-webkit-appearance: none;
+	}
+
+	h1 {
+		font-size: 2em !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	body.home h1 {
+		font-size: 1.5em !important;
+	}
+
+	body.home h1 a {
+		font-size: 0.5em !important;
+	}
+
+	h2 {
+		font-size: 1em !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	h3 {
+		font-size: 1em !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	/*
+	#footer h2,
+	#footer h3 {
+		font-size: 14px !important;
+	} */
+
+	/* new elementor stuff */
+
+	body.home header .logo a {
+		display: block;
+		visibility: visible;
+	}
+
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 50px;
+		right: 6%;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 80px;
+	}
+
+	header nav {
+		margin-top: 75px;
+	}
+
+	.hfe-menu-item {
+		text-align: center;
+		padding: 25px 20px !important;
+	}
+
+	.hfe-menu-item:hover,
+	.hfe-menu-item:active,
+	.hfe-menu-item:focus {
+		background-color: #eee !important;
+	}
+
+	/* .hfe-dropdown {
+		
+	} */
+
+	/* end new elementor stuff */
+
+
+	.hero.hero-work {
+		background-size: 150vh !important;
+		background-position: 30vw 0 !important;
+	}
+
+	/* .hero-home {
+		padding-top: 0 !important;
+		min-height: 50vh !important;
+	} */
+
+	/* .news-list ul li .post-date,
+	.news-list ul li a {
+		float: none;
+		display: block;
+		width: auto;
+	} */
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+	.hero-home {
+		min-height: 420px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	body {
+		background-size: 500% auto !important;
+	}
+
+	.logo img {
+		max-width: 150px;
+	}
+
+	h1 {
+		font-size: 1.4em !important;
+		font-weight: 400 !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	body.home h1 {
+		font-size: 1.6em !important;
+		font-weight: 300 !important;
+		margin-bottom: 45%;
+	}
+
+	body.home h1 a {
+		font-size: 0.6em !important;
+	}
+
+	h2 {
+		font-size: 1.2em !important;
+		font-weight: 400 !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	h3 {
+		font-size: 1.2em !important;
+		letter-spacing: 0.1em !important;
+	}
+
+	/* what we do */
+
+	.wwd h2.elementor-heading-title,
+	.wwd .elementor-text-editor p {
+		/* force center for some of the sub page styles */
+		text-align: center !important;
+	}
+
+	.wwd .elementor-widget-container {
+		padding-left: 0 !important;
+	}
+
+	.hfe-nav-menu-icon {
+		position: fixed;
+		top: 50px;
+		right: 40px;
+	}
+
+	body.logged-in .hfe-nav-menu-icon {
+		top: 100px;
+	}
+
+	/* home hero background */
+
+	/* home */
+
+	.hero {
+		background-size: auto 250vh !important;
+		background-position: 0 0 !important;
+		/* background-position: top center !important;
+		background-size: cover;
+		padding-top: 0 !important; */
+	}
+
+	.hero.hero-work {
+		background-size: 150vh !important;
+		background-position: 0 35vh !important;
+	}
+
+	.bg-iso-cube-thin {
+		background-size: auto 150vh !important;
+		background-position: top right !important;
+	}
+
+	.bg-style-1>div {
+		padding: 10% !important;
+	}
+
+	/* work */
+
+	/* fixing a weird bug for the simple 
+	gallery elementor component in mobile */
+	.gallery {
+		margin-right: 0px !important;
+		margin-left: 16% !important;
+	}
+
+	/* .elementor-2 .elementor-element.elementor-element-4df49043:not(.elementor-motion-effects-element-type-background),
+	.elementor-2 .elementor-element.elementor-element-4df49043>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+		background-size: auto 300vh;
+		background-position: top center;
+	} */
+
+	.wpforms-container ul li {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+	body.home h1 {
+		margin-bottom: 30%;
+	}
+
+	.hero {
+		background-size: auto 450vh !important;
+		background-position: 0 0 !important;
+		/* background-position: top center !important;
+		background-size: cover;
+		padding-top: 0 !important; */
+	}
+}
+
+/*  iphone XR */
+
+@media screen and (max-width: 414px) and (height: 896px) {
+	body.home h1 {
+		margin-bottom: 90% !important;
+	}
+}
+
+/*  iphone X */
+
+@media screen and (max-width: 375px) and (height: 812px) {
+	body.home h1 {
+		margin-bottom: 80% !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	.hfe-nav-menu-icon {
+		right: 20px;
+	}
+
+	body.home h1 {
+		font-size: 1.3em !important;
+		font-weight: 300 !important;
+	}
+
+	body.home h1 a {
+		font-size: 0.6em !important;
+	}
+}
+
+/* animations *********************************/
+
+.show {
+	opacity: 1;
+	transition: opacity 400ms;
+}
+
+.hide {
+	opacity: 0;
+	transition: opacity 400ms;
+}
